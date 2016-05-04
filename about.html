@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHT\
+ML 1.0 Transitional//EN" "http://www.w\
+3.org/TR/xhtml1/DTD/xhtml1-transitiona\
+l.dtd">
+<html xmlns="http://www.w3.org/1999/xh\
+tml">
+<head>
+   <link href = "style.css" rel = "stylesheet" type = "text/css">
+  <title>About Us</title>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapLocation = {
+    center:new google.maps.LatLng(42.688269, -73.819492),
+    zoom:16,
+    mapTypeId:google.maps.MapTypeId.SATELLITE
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapLocation);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+  <h1 id="header">About Us</h1>
+  <ul id="nav">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="product.html">Our Products</a></li>
+     <li><a href="faq.html">FAQs</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     <li><a href="snake.htm">Play Snake</a></li>
+  </ul>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Z4nFuYBSmgA" frameborder="0" allowfullscreen></iframe>
+<div>
+  <h1>Our Story</h1>
+  <p>
+    The video posted above was the start of our project. We originally started
+    working on this during the Blackstone Launchpad Campus Challenge Competition.
+    We submitted this as an idea to it but unfortunately due to issues with voting
+    we did not get to advance on in this competition. We were started up by
+    our founders: Elliott Weintraub and Eliezer Marte who are Juniors majoring
+    in Computer Science at UAlbany.
+  </p>
+</div>
+<div>
+  <h1>Check out our university</h1>
+   <div id="googleMap" style="width:500px;height:380px;"></div>
+</div>
+</body>
